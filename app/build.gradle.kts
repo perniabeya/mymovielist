@@ -5,12 +5,12 @@ plugins {
 
 android {
     namespace = "com.example.mymovielist"
-    compileSdk = 34
+    compileSdk = 35
 
     defaultConfig {
         applicationId = "com.example.mymovielist"
         minSdk = 26
-        targetSdk = 34
+        targetSdk = 35
         versionCode = 1
         versionName = "1.0"
 
@@ -36,6 +36,14 @@ android {
 }
 
 dependencies {
+
+    // Retrofit & GsonConverterFactory
+    implementation("com.squareup.retrofit2:retrofit:2.11.0")
+    implementation("com.squareup.retrofit2:converter-gson:2.11.0")
+
+    // Picasso
+    implementation("com.squareup.picasso:picasso:2.8")
+
 
     implementation(libs.androidx.core.ktx)
     implementation(libs.androidx.appcompat)
