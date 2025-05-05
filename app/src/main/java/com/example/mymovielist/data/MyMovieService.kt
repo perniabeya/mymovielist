@@ -11,8 +11,8 @@ interface MyMovieService {
         @GET("?apikey=adc3dc3d")
         suspend fun findMovieByName(@Query("s") query: String): MovieResponse
 
-        @GET("{Movie-id}")
-        suspend fun findMovieById(@Path("i") i: String): Movie
+        @GET("?apikey=adc3dc3d")
+        suspend fun findMovieById(@Query("i") i: String): Movie
 
         companion object {
             fun getRetrofit(): MyMovieService {
